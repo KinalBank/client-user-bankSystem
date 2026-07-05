@@ -36,13 +36,13 @@ const attachAuthToken = (config, token) => {
 // ================= INSTANCIAS AXIOS =================
 const axiosAuth = axios.create({
     baseURL: import.meta.env.VITE_AUTH_URL,
-    timeout: 8000,
+    timeout: 60000,
     headers: { "Content-Type": "application/json" },
 });
 
 const axiosClient = axios.create({
     baseURL: import.meta.env.VITE_CLIENT_URL,
-    timeout: 8000,
+    timeout: 60000,
     headers: { "Content-Type": "application/json" },
 });
 
