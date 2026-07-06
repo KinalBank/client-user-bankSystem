@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { LoginForm } from '../components/LoginForm.jsx';
 import { RegisterForm } from '../components/RegisterForm.jsx';
 import { ForgotPasswordForm } from '../components/ForgotPasswordForm.jsx';
+import logo from "../../../assets/img/Kinal_bank.png";
 
 const AuthPage = () => {
   const [view, setView] = useState('login'); // 'login' | 'register' | 'forgot'
@@ -22,7 +23,7 @@ const AuthPage = () => {
         {/* LOGO */}
         <div className="flex justify-center mb-6">
           <img
-            src="/src/assets/img/Kinal_bank.png"
+            src={logo}
             alt="KinalBank"
             className="h-32 w-auto object-contain"
           />
