@@ -23,11 +23,6 @@ const Navbar = ({ onMenuClick }) => {
         {/* Derecha: saludo al usuario */}
         {user && (
           <div className="hidden sm:flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center">
-              <span className="text-emerald-700 font-bold text-sm">
-                {user.UserName?.charAt(0).toUpperCase()}
-              </span>
-            </div>
             <span className="text-sm text-gray-600 font-medium">{user.UserName}</span>
           </div>
         )}
